@@ -29,10 +29,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="opencv_ffmpeg300_64.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="leopard.jpg">
+    <Image Include="Madrid.jpg">
       <Filter>Файлы ресурсов</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Madrid.mp4" />
   </ItemGroup>
 </Project>

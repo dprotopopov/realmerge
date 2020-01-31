@@ -154,7 +154,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\packages\opencv3.3.0.0.1\build\native\lib\x64\v120\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_core300.lib;opencv_imgcodecs300.lib;opencv_highgui300.lib;opencv_imgproc300.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_core300.lib;opencv_imgcodecs300.lib;opencv_highgui300.lib;opencv_imgproc300.lib;opencv_video300.lib;opencv_videoio300.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -170,10 +170,16 @@
     <ClCompile Include="realmerge.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="opencv_ffmpeg300_64.dll" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="leopard.jpg" />
+    <Image Include="Madrid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Madrid.mp4">
+      <FileType>Media</FileType>
+    </Media>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
